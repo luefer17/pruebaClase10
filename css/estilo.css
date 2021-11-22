@@ -1,0 +1,715 @@
+/* estilo para varias paginas */
+* {
+	margin: 0px;
+}
+
+.titulo__sitio {
+	font-weight: 900;
+	font-size: 50px;
+}
+.titulos__paginas {
+	font-weight: 700;
+	font-size: 40px;
+	color:whitesmoke
+}
+.subtitulos__paginas {
+	font-weight: 400;
+	font-size: 30px;
+	color:whitesmoke
+}
+.contenido__grande {
+	font-weight: 700;
+	font-size: 20px;
+}
+.contenido__chico {
+	font-weight: 400;
+	font-size: 20px;
+	text-align: justify;
+	color: white;
+}
+#sinFondo {
+	background-color: transparent !important;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	background-color: whitesmoke;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	background-color:rebeccapurple;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 18px;
+}
+nav ul li {
+	padding: 0px 10px 0px 10px;
+}
+nav {
+	position: sticky;
+	top: 0px
+}
+header {
+	position: sticky;
+	top: 0px
+}
+header {
+	background-color:black;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color:white
+}
+a:visited {
+	color:white
+}
+ul {
+	list-style: none;
+}
+/* fin de estilo para varias paginas */
+
+
+
+
+
+/* INDEX */
+
+.principal__nuevoAlbum__portada__imagen {
+	width: 500px;
+	height: 500px;
+	border: black 10px solid;
+}
+.principal__nuevoAlbum__portada {
+	padding: 0px 0px 70px 0px;
+}
+ .conciertos__mapa__iframe {
+	border: black 10px solid;
+}
+.tablaIndex {
+	background-color: white;
+}
+.conciertos__fechasYLugares {
+	padding: 125px 0px 0px 50px;
+}
+.tituloIndex {
+	padding: 10px;
+}
+.subtituloIndex {
+	padding: 10px;
+}
+.titulo2Index {
+	padding: 20px;
+}
+.principal {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 175vh;
+	width: 100%;
+}
+.principal__gif {
+	background-image: url(../assets/1920.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+section.conciertos {
+	background-color: darkred;
+}
+section.conciertos .titulo2Index {
+	display: flex;
+	justify-content: center;
+}
+.mapaTabla {
+	display: flex;
+	justify-content: center;
+	padding: 0px 0px 50px 0px;
+} 
+
+/* CONFIG DE GRID */
+.gridIndex {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "logo nav nav"
+						 "principal principal principal"
+						 "conciertos conciertos conciertos"
+						 "footer footer footer"
+}
+header {
+	grid-area: logo;
+	padding: 0px 0px 0px 20px;
+}
+nav {
+	grid-area: nav;
+	background-color: black;
+}
+main {
+	grid-area: principal;
+}
+section.conciertos {
+	grid-area: conciertos;
+}
+footer {
+	grid-area: footer;
+}
+/* FIN CONFIG GRID */
+
+/* HISTORIA */
+
+.gridNosotros {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "logo nav nav"
+	"texto texto texto"
+	"carrusel carrusel carrusel"
+	"footer footer footer"
+}
+.texto {
+	grid-area: texto;
+	background-color: darkblue;
+	display: flex;
+	justify-content: center;
+}
+.carrusel {
+	grid-area: carrusel;
+	background-color: darkblue;
+	display: flex;
+	justify-content: center;
+	padding: 60px;
+}
+.historiaContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 70px 20px 70px;
+	height: 145vh;
+}
+.historiaGif {
+	background-image: url(../assets/19202.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+section.historia {
+	background-color: black;
+	text-align: center;
+}
+.historia .titulos__paginas {
+	padding: 20px;
+}
+
+
+/* DISCOGRAFIA */
+
+.gridDiscos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "logo nav nav"
+						 "disco disco disco"
+						 "discos discos discos"
+					 	 "footer footer footer";
+}
+
+section.discos {
+	grid-area: disco;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 40px 100px 40px;
+	background-image: url(../assets/19232.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.discografia {
+	grid-area: discos;
+}
+
+
+.gridDiscos_Especifica div {
+	display: flex;
+	align-items: center;
+}
+
+.tituloDiscos {
+	background-color: darkgreen;
+	text-align: center;
+	padding: 20px;
+}
+
+.gridDiscos_Especifica {
+	background-color: darkgreen;
+	padding: 60px 100px 60px 20px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 25% 50% 25%;
+	grid-template-rows: 50px 160px 50px 50px 160px 50px 50px 160px 50px;
+	grid-template-areas: 
+	"imagen titulo redes"
+	"imagen descrip descrip"
+	"imagen repro repro"
+		"imagen2 titulo2 redes2"
+		"imagen2 descrip2 descrip2"
+		"imagen2 repro2 repro2"
+	"imagen3 titulo3 redes3"
+	"imagen3 descrip3 descrip3"
+	"imagen3 repro3 repro3";
+}
+.gridDiscos_Titulo {
+	grid-area: titulo;
+}
+.gridDiscos_Titulo2 {
+	grid-area: titulo2;
+}
+.gridDiscos_Titulo3 {
+	grid-area: titulo3;
+}
+.gridDiscos_Imagen {
+	grid-area: imagen;
+	justify-content: center;
+	padding: 0px 0px 0px 0px;
+}
+.gridDiscos_Imagen2 {
+	grid-area: imagen2;
+	justify-content: center;
+}
+.gridDiscos_Imagen3 {
+	grid-area: imagen3;
+	justify-content: center;
+}
+.gridDiscos_Descripcion {
+	grid-area: descrip;
+}
+.gridDiscos_Descripcion2 {
+	grid-area: descrip2;
+}
+.gridDiscos_Descripcion3 {
+	grid-area: descrip3;
+}
+.gridDiscos_Redes {
+	grid-area: redes;
+}
+.gridDiscos_Redes2 {
+	grid-area: redes2;
+}
+.gridDiscos_Redes3 {
+	grid-area: redes3;
+}
+
+/* GALERIA */
+
+.gridGaleria {
+	background-color: chocolate;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"logo nav nav"
+	"galeria galeria galeria"
+	"footer footer footer";
+}
+header {
+	grid-area: logo;
+}
+nav {
+	grid-area: nav;
+}
+.galeria {
+	grid-area: galeria;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px;
+}
+.galeria__fotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galeria__fotos img {
+	padding: 20px;
+}
+footer {
+	grid-area: footer;
+}
+
+/* CONTACTO */
+
+.contacto__fondo {
+	background-image: url(../assets/contactofondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.gridContacto {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "logo nav nav"
+	"contacto contacto contacto"
+	"footer footer footer";
+}
+header {
+	grid-area: logo;
+}
+nav {
+	grid-area: nav;
+}
+.mainContacto {
+	grid-area: contacto;
+
+}
+.formulariosection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+footer {
+	grid-area: footer;
+}
+
+.formulario {
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+}
+
+.formulario__fondo {
+	background-color: white;
+}
+
+
+/* FOOTER */
+
+
+
+
+.rrss a img {
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querie !!!!! */
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+/* index */
+	.gridIndex {
+		display: grid;
+		grid-template-areas:
+		"logo"
+		"nav"
+		"principal"
+		"conciertos"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 100px 1400px 900px 100px;
+	}
+	header {
+		grid-area: logo;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	nav {
+		grid-area: nav;
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	main {
+		grid-area: principal;
+	}
+	section.conciertos {
+		grid-area: conciertos;
+	}
+	footer {
+		grid-area: footer;
+		padding: 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.principal__nuevoAlbum__portada__imagen {
+		width: 100%;
+		height: auto;
+	}
+	.principal__nuevoAlbum__portada {
+		padding: 70px;
+		border: none;
+		display: flex;
+		justify-content: center;
+	}
+	.mapaTabla {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.conciertos__fechasYLugares {
+		padding: 20px;
+	}
+	.conciertos__mapa__iframe {
+		border:none;
+		padding: 20px;
+	}	
+	.conciertos__mapa {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		padding: 10px;
+	}
+	.rrss a img {
+		padding: 0px;
+	}
+	.principal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+/* historia */
+	.gridNosotros {
+		display: grid;
+		grid-template-rows: 100px 100px 2000px 610px 100px;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"logo" 
+		"nav"
+		"texto"
+		"carrusel"
+		"footer"
+	}
+	footer {
+		grid-area: footer;
+		padding: 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header {
+		grid-area: logo;
+	
+	}
+	nav {
+		grid-area: nav;
+	}
+	.texto {
+		grid-area: texto;
+		background-color: darkblue;
+		display: flex;
+		justify-content: center;
+	}
+	.carrusel {
+		grid-area: carrusel;
+		background-color: darkblue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px;
+	}
+	.carrusel__foto {
+		width: 100%;
+		height: auto;
+	}
+	.parrafo {
+		width: 100%;
+		height: auto;
+	}
+	.historiaContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0px 70px 20px 70px;
+		height: 240vh;
+	}
+	.historiaGif {
+		background-image: url(../assets/19202.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	section.historia {
+		background-color: black;
+		text-align: center;
+	}
+	.historia .titulos__paginas {
+		padding: 20px;
+	}
+/* discos */
+	.gridDiscos {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"disco"
+		"discos"
+		"footer";	
+	}
+	footer {
+		grid-area: footer;
+		padding: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header {
+		grid-area: logo;
+	}
+	nav {
+		grid-area: nav;
+	}
+	section.discos {
+		grid-area: disco;
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.discos img {
+		padding: 10px;
+	}
+	main.discografia {
+		grid-area: discos;
+	}
+
+	.gridDiscos_Especifica {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+	.gridDiscos_Especifica div img {
+		padding: 10px;
+	}
+
+	/* galeria */
+	.gridGaleria {
+		background-color: chocolate;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"galeria"
+		"footer";
+	}
+	header {
+		grid-area: logo;
+	}
+	nav {
+		grid-area: nav;
+	}
+	.galeria {
+		grid-area: galeria;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 50px;
+	}
+	
+	.galeria__fotos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.galeria__fotos img {
+		width: 200px;
+		height: 200px;
+		padding: 5px;
+	}
+		footer {
+		grid-area: footer;
+	}
+
+/* contacto */
+
+
+	.gridContacto {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"contacto"
+		"footer";
+	}
+	header {
+		grid-area: logo;
+	}
+	nav {
+		grid-area: nav;
+	}
+	.mainContacto {
+		grid-area: contacto;
+	
+	}
+	.formulariosection {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 80vh;
+	}
+	footer {
+		grid-area: footer;
+	}
+	
+	.formulario {
+		font-weight: 400;
+		font-size: 25px;
+		text-align: center;
+	}
+	
+	.formulario__fondo {
+		background-color: white;
+	}
+
+}

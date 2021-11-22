@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="contacto__fondo gridContacto">
+	<!-- encabezado del sitio -->
+	<header id="sinFondo">
+		<!-- logo que linkea a inicio -->
+		<div class="header__logo">
+			<a class="titulo__sitio" href="../index.html">Los Dubis</a>
+		</div>
+		<!-- nav -->
+	</header>
+	<nav class="header__navegacion" id="sinFondo">
+		<ul class="contenido__grande">
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="../pages/nosotros.html">Historia</a></li>
+			<li><a href="../pages/discos.html">Discografía</a></li>
+			<li><a href="../pages/fotos.html">Galería</a></li>
+			<li><a href="../pages/contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<!-- inicio de contenido -->
+	<main class="mainContacto">
+		<!-- inicio de contacto -->
+		<section class="formulariosection">
+			<div class="">
+				<h3 class="titulos__paginas ">¡Escribinos!</h3>
+			</div>
+			<!-- formulario -->
+			<form class="formulario">
+				<fieldset class="formulario__fondo">
+				<label for="Nombre">Tu nombre y apellido:
+					<br><input type="text" placeholder="Nombre y Apellido">
+				</label>
+				<br>
+				<label for="Mail">Tu email:
+				<br><input type="text" placeholder="Email">
+				<br>
+				<label for="Mensaje">¡Dejanos tu mensaje!:
+				<br><input type="text" placeholder="Mensaje">
+				</label>
+				<br>
+				<!-- menú desplegable -->
+					<legend>Género:</legend>	
+						<select name="Género">
+							<option value="M">Masculino</option>
+							<option value="F">Femenino</option>
+							<option value="O">Otro</option>
+						</select>
+				<!-- checkbox -->
+				<h4>Deseo recibir novedades por mail:
+					<input type="checkbox" name="aceptar" value="1"></h4>
+				<!-- botones para enviar -->
+				<input type="submit" value="Mandar"> <input type="reset" value="Limpiar">
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<!-- inicio de footer -->
+	<footer id="sinFondo">
+		<div class="footer__logo">
+			<!-- logo que linkea a inicio -->
+			<a class="titulos__paginas" href="../index.html">Los Dubis</a>
+		</div>
+		<!-- iconos de redes sociales con link -->
+		<div class="rrss">
+			<a href="https://www.facebook.com/PasionDubidera">
+    			<img src="../assets/facebook.png" width="50" height="50" alt="Facebook"/></a>
+			<a href="https://www.instagram.com/">
+    			<img src="../assets/instagram.png" width="50" height="50" alt="Instagram"/></a>
+			<a href="https://www.twitter.com/">
+    			<img src="../assets/twitter.png" width="50" height="50" alt="Twitter"/></a>
+			<a href="https://www.spotify.com/">
+    			<img src="../assets/spotify.png" width="50" height="50" alt="Spotify"/></a>
+			<a href="https://www.youtube.com/">
+    			<img src="../assets/youtube.png" width="50" height="50" alt="Youtube"/></a>	
+    	</div>
+		<!-- contacto -->
+		<div class="contacto">
+			<div class="contacto__texto">
+				<a class="contacto__texto__contacto" href="./contacto.html">Contacto</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
